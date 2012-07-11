@@ -1,0 +1,8 @@
+Source: libgnustl-shared
+Section: shells
+Priority: optional
+Maintainer: Dan Drown <dan-android@drown.org>
+Package: libgnustl-shared
+Version: ndk-r8
+Architecture: arm
+Description: the shared library for C++ stl

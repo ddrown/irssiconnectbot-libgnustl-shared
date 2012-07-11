@@ -1,0 +1,28 @@
+#!/bin/sh
+set -e 
+
+PACKAGE=libgnustl-shared
+SOURCEDIR=~/droid/android-ndk/sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/
+
+case "$1" in
+  build)
+    if [ \! -d $SOURCEDIR ]; then
+      echo libstdc++ binary lib directory not found
+      exit 1
+    fi
+    ;;
+
+  install)
+    DESTDIR=~/tmp/$PACKAGE
+    rm -rf $DESTDIR
+    mkdir -p $DESTDIR/data/data/org.woltage.irssiconnectbot/lib
+    install -m755 $SOURCEDIR/libgnustl_shared.so $DESTDIR/data/data/org.woltage.irssiconnectbot/lib/
+    ;;
+    
+  clean)
+    ;;
+
+  *)
+    echo unknown argument $1
+    ;;
+esac
