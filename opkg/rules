@@ -15,8 +15,8 @@ case "$1" in
   install)
     DESTDIR=~/tmp/$PACKAGE
     rm -rf $DESTDIR
-    mkdir -p $DESTDIR/data/data/org.woltage.irssiconnectbot/lib
-    install -m755 $SOURCEDIR/libgnustl_shared.so $DESTDIR/data/data/org.woltage.irssiconnectbot/lib/
+    mkdir -p $DESTDIR/data/data/org.woltage.irssiconnectbot/files/lib
+    install -m755 $SOURCEDIR/libgnustl_shared.so $DESTDIR/data/data/org.woltage.irssiconnectbot/files/lib/
     ;;
     
   clean)
