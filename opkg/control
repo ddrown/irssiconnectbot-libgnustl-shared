@@ -3,6 +3,6 @@ Section: shells
 Priority: optional
 Maintainer: Dan Drown <dan-android@drown.org>
 Package: libgnustl-shared
-Version: ndk-r8
+Version: ndk-r8b
 Architecture: arm
 Description: the shared library for C++ stl

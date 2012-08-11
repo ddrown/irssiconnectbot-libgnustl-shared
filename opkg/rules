@@ -2,7 +2,7 @@
 set -e 
 
 PACKAGE=libgnustl-shared
-SOURCEDIR=~/droid/android-ndk/sources/cxx-stl/gnu-libstdc++/libs/armeabi-v7a/
+SOURCEDIR=~/droid/android-ndk/sources/cxx-stl/gnu-libstdc++/4.6/libs/armeabi-v7a/
 
 case "$1" in
   build)
